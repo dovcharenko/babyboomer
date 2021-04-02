@@ -248,7 +248,12 @@ void bigDidit_DrawSymbol(int matrix[], int position = 0)
 		for (i = 0; i < LCD_DIGIT_SIZE_COL; i++) {
 			// Устанавливаем курсор в нужною позицию
 			lcd->setCursor(i + position, n);
-			// Рисуем символ из матрицы
+
+      // Чтобы посмотреть как оно рисуется - 
+      // расскоментировать строчку ниже
+      delay(100);
+
+      // Рисуем символ из матрицы
 			lcd->write(matrix[idx++]);
     }
   }
