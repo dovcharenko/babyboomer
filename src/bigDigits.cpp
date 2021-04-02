@@ -251,7 +251,7 @@ void bigDidit_DrawSymbol(int matrix[], int position = 0)
 
       // Чтобы посмотреть как оно рисуется - 
       // расскоментировать строчку ниже
-      delay(100);
+      delay(50);
 
       // Рисуем символ из матрицы
 			lcd->write(matrix[idx++]);
